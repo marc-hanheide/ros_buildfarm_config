@@ -7,7 +7,7 @@ jenkins_pull_request_job_priority: 61
 notifications:
   committers: false
   emails:
-  - ros-buildfarm-testfarm@googlegroups.com
+  - lcas-build-farm@googlegroups.com
   maintainers: false
 repositories:
   keys:
@@ -43,7 +43,7 @@ repositories:
     =E8ot
     -----END PGP PUBLIC KEY BLOCK-----
   urls:
-  - http://54.183.65.232/ubuntu/testing
+  - http://10.210.9.154/ubuntu/testing
 targets:
   ubuntu:
     trusty:
@@ -52,7 +52,7 @@ test_commits:
   default: true
 # do not run pr builds on the test farm (otherwise we'll get multiple reports)
 test_pull_requests:
-  default: false
+  default: true
   force: false
 type: source-build
 version: 2
